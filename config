@@ -83,10 +83,6 @@ bindsym $mod+m exec arandr
 bindsym $mod+Shift+v exec vboxmanage startvm "Windows 7"
 bindsym $mod+z exec uget-gtk
 
-#assign [class="Geany"] 2
-#assign [class="Firefox"] 2
-#assign [class="Vlc"] 2
-
 
 # change focus
 bindsym $mod+j focus left 
