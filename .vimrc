@@ -29,11 +29,8 @@ call plug#end()
 
 set encoding=utf-8
 
-
 map <F9> :w<CR>:!python %<CR>
 vnoremap yy :w !xclip -selection clipboard<CR><CR>
 map <C-n> :NERDTreeToggle<CR>
 map <F7> :w<CR>:!bash %<CR>
 map <F5> :w<CR>:!gcc % && ./a.out<CR>
-
-
