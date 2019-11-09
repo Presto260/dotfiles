@@ -76,6 +76,7 @@ bindsym $mod+Shift+f exec feh --randomize --bg-fill ~/Pictures/*
 bindsym $mod+Shift+p exec reboot
 bindsym $mod+Shift+g exec st -e sudo gparted
 bindsym $mod+Shift+e exec evince
+bindsym $mod+Shift+b exec st -e /home/preston/bin/backup.sh
 bindsym $mod+p exec pavucontrol
 bindsym $mod+x exec android-file-transfer
 bindsym $mod+c exec chromium
