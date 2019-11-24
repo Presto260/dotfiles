@@ -74,4 +74,5 @@ alias ls='ls --color=auto'
 alias ll='ls -l --color=auto'
 alias la='ls -a --color=auto'
 eval "$(fasd --init auto)"
+alias nm='sudo nm-applet &'
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh

@@ -14,6 +14,7 @@ arandr
 archlinux-keyring
 argon2
 aspell
+at
 at-spi2-atk
 at-spi2-core
 atftp
@@ -29,6 +30,7 @@ bash
 bash-completion
 bat
 bc
+bcg729
 bind-tools
 binutils
 bison
@@ -60,7 +62,6 @@ clucene
 cmake
 cmst
 cmus
-code
 colord
 compton
 confuse
@@ -69,6 +70,7 @@ coreutils
 cowsay
 cracklib
 create_ap
+cronie
 cryptsetup
 cups
 cups-filters
@@ -97,7 +99,6 @@ dvd+rw-tools
 e2fsprogs
 efibootmgr
 efivar
-electron4
 enchant
 ethtool
 evince
@@ -135,7 +136,8 @@ gdb
 gdb-common
 gdbm
 gdk-pixbuf2
-geany
+gedit
+gedit-plugins
 gegl
 geoip
 geoip-database
@@ -168,6 +170,7 @@ graphene
 graphicsmagick
 graphite
 grep
+grilo
 grive
 groff
 grub
@@ -186,6 +189,7 @@ gtk-update-icon-cache
 gtk2
 gtk3
 gtkmm3
+gtksourceview4
 gtypist
 guile
 guile2.0
@@ -204,7 +208,6 @@ hostapd
 hplip
 hspell
 htop
-http-parser
 hunspell
 hwids
 hyphen
@@ -231,7 +234,6 @@ jack
 jansson
 jasper
 jbig2dec
-jemalloc
 jfsutils
 js60
 json-c
@@ -333,6 +335,7 @@ libldap
 liblouis
 liblqr
 libmad
+libmaxminddb
 libmm-glib
 libmng
 libmnl
@@ -356,6 +359,7 @@ libnma
 libnotify
 libnsl
 libnumbertext
+liboauth
 libodfgen
 libogg
 libomxil-bellagio
@@ -365,6 +369,7 @@ libpagemaker
 libpaper
 libpcap
 libpciaccess
+libpeas
 libpgm
 libpipeline
 libplacebo
@@ -497,6 +502,7 @@ man-db
 man-pages
 mariadb-libs
 mdadm
+media-player-info
 mesa
 metasploit
 metis
@@ -516,7 +522,6 @@ mtools
 mujs
 multibootusb-git
 mypaint-brushes1
-nano
 nasm
 nautilus
 nautilus-sendto
@@ -536,20 +541,19 @@ nfs-utils
 nfsidmap
 nm-connection-editor
 nmap
-nomachine
 noto-fonts
 npth
 nspr
 nss
 ntfs-3g
 onboard
+openal
 opencore-amr
 openexr
 openjpeg2
 openssh
 openssl
 openssl-1.0
-openvas
 openvpn
 opus
 orc
@@ -694,20 +698,21 @@ python2-zipp
 qpdf
 qt5-base
 qt5-imageformats
+qt5-multimedia
+qt5-svg
 qt5-x11extras
 ranger
 raptor
 rasqal
 re2
 readline
-redis
 redland
 refind-efi
 reflector
 reiserfsprogs
 rest
 rhash
-ripgrep
+rhythmbox
 rpcbind
 rsync
 rtkit
@@ -734,6 +739,7 @@ slang
 smbclient
 snappy
 sound-theme-freedesktop
+spandsp
 speex
 speexdsp
 spirv-tools
@@ -797,6 +803,8 @@ webrtc-audio-processing
 wget
 which
 wireless_tools
+wireshark-cli
+wireshark-qt
 wpa_supplicant
 wps-office-stable
 x264
@@ -887,6 +895,7 @@ zsh
 zsh-completions
 zstd
 
+
 downgrader
 gotop-bin
 grive
@@ -896,9 +905,26 @@ isomaster
 libspotify
 mopidy-spotify
 multibootusb-git
-nomachine
 python-basiciw
 python2-pyspotify
+totem-plparser
+ttf-ms-fonts
+ttf-wps-fonts
+virtualbox-ext-oracle
+wps-office-stable
+yay
+downgrader
+gotop-bin
+grive
+gtypist
+i3pystatus
+isomaster
+libspotify
+mopidy-spotify
+multibootusb-git
+python-basiciw
+python2-pyspotify
+totem-plparser
 ttf-ms-fonts
 ttf-wps-fonts
 virtualbox-ext-oracle

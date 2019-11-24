@@ -56,7 +56,7 @@ exec --no-startup-id pasystray
 exec --no-startup-id blueman-applet
 exec --no-startup-id feh --randomize --bg-fill ~/Pictures/*
 exec --no-startup-id onboard
-exec --no-startup-id mopidy
+#exec --no-startup-id mopidy
 exec --no-startup-id minidlnad -f /home/$USER/.config/minidlna/minidlna.conf -P /home/$USER/.config/minidlna/minidlna.pid
 exec --no-startup-id compton &
 exec --no-startup-id /home/preston/bin/tidy.sh &
