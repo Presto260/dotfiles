@@ -27,7 +27,12 @@ font pango:monospace 8
 # font, it doesn’t scale on retina/hidpi displays.
 
 # disable title bar
-#for_window [class="^.*"] border pixel 1
+for_window [class="Gnome-calculator"] floating enable
+for_window [class="Org.gnome.Weather"] floating enable
+for_window [class="Xfce4-terminal"] floating enable
+for_window [class="Xfce4-terminal"] move to workspace 1
+exec --no-startup-id /usr/bin/xfce4-terminal
+
 new_window 1pixel
 
 # gaps
@@ -52,8 +57,8 @@ bindsym $mod+d exec dmenu_run
 
 # startups
 exec --no-startup-id nm-applet
-exec --no-startup-id pasystray
-exec --no-startup-id blueman-applet
+#exec --no-startup-id pasystray
+#exec --no-startup-id blueman-applet
 exec --no-startup-id feh --randomize --bg-fill ~/Pictures/*
 exec --no-startup-id onboard
 #exec --no-startup-id mopidy
@@ -69,12 +74,14 @@ bindsym $mod+Ctrl+1 exec xbacklight -dec 10
 bindsym $mod+Ctrl+2 exec xbacklight -inc 10
 bindsym $mod+g exec geany
 bindsym $mod+t exec st
+bindsym $mod+Ctrl+k exec klavaro
 bindsym $mod+Shift+t exec st -e ranger
 bindsym $mod+Shift+x exec shutdown now
 bindsym $mod+Shift+h exec st -e cmus
 bindsym $mod+Shift+f exec feh --randomize --bg-fill ~/Pictures/*
 bindsym $mod+Shift+p exec reboot
 bindsym $mod+Shift+g exec st -e sudo gparted
+bindsym $mod+Shift+n exec nomacs
 bindsym $mod+Shift+e exec evince
 bindsym $mod+Shift+b exec st -e /home/preston/bin/backup.sh
 bindsym $mod+p exec pavucontrol
@@ -138,25 +145,22 @@ bindsym $mod+a focus parent
 # switch to workspace
 bindsym $mod+1 workspace 1
 bindsym $mod+2 workspace 2
-bindsym $mod+3 workspace $ws3
-bindsym $mod+4 workspace $ws4
-bindsym $mod+5 workspace $ws5
+bindsym $mod+3 workspace 3
+bindsym $mod+4 workspace 4
+bindsym $mod+5 workspace 5
 bindsym $mod+6 workspace 6
 bindsym $mod+7 workspace 7
 bindsym $mod+8 workspace 8
 bindsym $mod+9 workspace 9
 bindsym $mod+0 workspace 10
 
-set $ws4 "4"
-set $ws5 "5"
-set $ws3 "3"
 
 # move focused container to workspace
 bindsym $mod+Shift+1 move container to workspace 1
 bindsym $mod+Shift+2 move container to workspace 2
-bindsym $mod+Shift+3 move container to workspace $ws3
-bindsym $mod+Shift+4 move container to workspace $ws4 
-bindsym $mod+Shift+5 move container to workspace $ws5
+bindsym $mod+Shift+3 move container to workspace 3
+bindsym $mod+Shift+4 move container to workspace 4 
+bindsym $mod+Shift+5 move container to workspace 5
 bindsym $mod+Shift+6 move container to workspace 6
 bindsym $mod+Shift+7 move container to workspace 7
 bindsym $mod+Shift+8 move container to workspace 8
@@ -164,9 +168,10 @@ bindsym $mod+Shift+9 move container to workspace 9
 bindsym $mod+Shift+0 move container to workspace 10
 
 
-assign [class="Chromium"] $ws4
-assign [class="VirtualBox"] $ws5
-assign [class="mpv"] $ws3
+assign [class="Chromium"] workspace 4
+assign [class="VirtualBox"] workspace 5
+assign [class="mpv"] workspace 3
+assign [class="Org.gnome.Weather"] workspace 6
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
@@ -208,8 +213,8 @@ bindsym $mod+r mode "resize"
 #        status_command i3status -c /home/preston/.config/i3status/i3status.conf
 #}
 
+
 bar {
-    status_command    python ~/.config/i3status/pystatus.py
-    position          bottom
-    workspace_buttons yes
+	status_command ~/git/bumblebee-status/bumblebee-status -m cmus nic network_traffic cpu memory battery xrandr time pasink bluetooth uptime shortcut -p time.format="%c" -t iceberg
+
 }

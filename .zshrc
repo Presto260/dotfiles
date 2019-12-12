@@ -70,9 +70,11 @@ zle -N down-line-or-beginning-search
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
+eval "$(fasd --init auto)"
+source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
+
 alias ls='ls --color=auto'
 alias ll='ls -l --color=auto'
 alias la='ls -a --color=auto'
-eval "$(fasd --init auto)"
-alias nm='sudo nm-applet &'
-source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
+alias nf='neofetch --disable cpu gpu memory'
+

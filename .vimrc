@@ -12,17 +12,12 @@ Plug 'https://github.com/junegunn/vim-github-dashboard.git'
  
 " On-demand loading
 Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
-Plug 'tpope/vim-fireplace', { 'for': 'clojure' }
  
-" Using a non-master branch
-Plug 'rdnetto/YCM-Generator', { 'branch': 'stable' }
-  
 " Unmanaged plugin (manually installed and updated)
  
 Plug 'valloric/youcompleteme'
 Plug 'itchyny/lightline.vim'
-Plug 'jiangmiao/auto-pairs'
-
+Plug 'raimondi/delimitmate'
  
 " Initialize plugin system
 call plug#end()
