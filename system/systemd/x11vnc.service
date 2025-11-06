@@ -1,0 +1,10 @@
+[Unit]
+Description=x11vnc server
+After=graphical.target
+
+[Service]
+ExecStartPre=/usr/bin/bash -c 'sleep 30'
+ExecStart=/usr/bin/x11vnc -wait 50 -display :0 -forever -noxdamage -nopw -rfbport 5900
+
+[Install]
+WantedBy=default.target

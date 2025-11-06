@@ -1,0 +1,21 @@
+# Static information about the filesystems.
+# See fstab(5) for details.
+
+# <file system> <dir> <type> <options> <dump> <pass>
+# /dev/sda6
+UUID=d9be5ed3-a310-4584-8827-709d33411e55	/         	btrfs     	rw,relatime,space_cache=v2,subvol=/	0 0
+
+# /dev/sda6
+UUID=d9be5ed3-a310-4584-8827-709d33411e55	/         	btrfs     	rw,relatime,space_cache=v2,subvol=/@	0 0
+
+# /dev/sda6
+UUID=d9be5ed3-a310-4584-8827-709d33411e55	/home     	btrfs     	rw,relatime,space_cache=v2,subvol=/@home	0 0
+
+# /dev/sda6
+UUID=d9be5ed3-a310-4584-8827-709d33411e55	/var/log  	btrfs     	rw,relatime,space_cache=v2,subvol=/@log	0 0
+
+/dev/sda5					/home/preston/shared	ntfs	defaults,noatime	0 2
+
+UUID=45E2-7EB1				/home/preston/mnt/usbp1	vfat		noauto,user,exec,noatime,umask=000	0 0			
+
+UUID=2df6b34c-1c39-48d1-ba27-cfbf130524d4	/home/preston/mnt/usbp2	ext4	noauto,user,exec,noatime	0 0

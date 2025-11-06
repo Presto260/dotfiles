@@ -1,0 +1,12 @@
+[Unit]
+Description=TigerVNC Service
+After=graphical.target
+
+[Service]
+ExecStart=/usr/bin/vncserver :1
+ExecStop=/usr/bin/vncserver -kill :1
+Restart=on-failure
+RestartSec=20
+
+[Install]
+WantedBy=default.target
